@@ -23,27 +23,27 @@ passFailFilePath = exerciseFilePath + 'passFailFile'
 ## Reads the content and then prints it into terminal
 ## Then closes the file
 
-#print_contents_of_file(inputFilePath)
+print_contents_of_file(inputFilePath)
 
 
 ## Now we are going to find all the people who passed and failed
 ## Put them into an array
 
-#passed = find_within_file(inputFilePath, "P")
-#failed = find_within_file(inputFilePath, "F")
+passed = find_within_file(inputFilePath, "P")
+failed = find_within_file(inputFilePath, "F")
 
-# print(passed)
-# print(failed)
+print(passed)
+print(failed)
 
 ## We are going to be writing a file using python
 ## We're going to save all the passes and failed into the file
 
-# passFailFile = open(passFailFilePath, 'w')
+passFailFile = open(passFailFilePath, 'w')
 
-# for person in passed:
-#     passFailFile.write(person)
+for person in passed:
+    passFailFile.write(person)
 
-# for person in failed:
-#     passFailFile.write(person)
+for person in failed:
+    passFailFile.write(person)
 
-# print_contents_of_file(passFailFilePath)
+print_contents_of_file(passFailFilePath)
